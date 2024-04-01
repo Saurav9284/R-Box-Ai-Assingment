@@ -63,24 +63,19 @@ export const AboutEmail = () =>{
 
     return (
         <Box textAlign="left"  >
-            {/* Header */}
             <Flex 
             borderBottom="1px"
-            // borderColor={colorMode=='light'?"black" :"#33383F"}
             borderColor={(colorMode=='light')? "#D8D8D8":"#343A40"}
             gap="8px"
             padding="20px"
             alignItems="center"
             justifyContent="space-between"
-            // border={"1px"}
-            
             >
                 <Stack
                 w="49%"
                 spacing="2px"
                 
                 >
-                    
                         <Text
                         fontFamily="Inter"
                         fontWeight="600"
@@ -139,8 +134,6 @@ export const AboutEmail = () =>{
                     
                 
             </Flex>
-
-            {/* Content */}
 
             {
                 data && data.map((user, i) =>(
@@ -205,8 +198,6 @@ export const AboutEmail = () =>{
         <Box>
             <ReplyEmailPopup threadId={thread_id} token={token} />
         </Box>
-            
-
         </Box>
     )
 }

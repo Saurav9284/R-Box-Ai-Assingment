@@ -86,9 +86,7 @@ export const ReplyEmailPopup = ({threadId, token}) =>{
 
     const handleChange = (e)=>{
         const {name, value} = e.target;
-        // console.log(name, value);
         setData({...data, [name]:value});
-        // console.log(data);
     }
 
     const handleSubmit = ()=>{
@@ -117,7 +115,6 @@ export const ReplyEmailPopup = ({threadId, token}) =>{
         <Box>
             <Popover placement='top-start'>
                 <PopoverTrigger>
-                {/*  Reply button */}
                 <Button 
                 leftIcon={<MdReply />}
                 bgGradient='linear(to-r, rgba(75, 99, 221, 1), rgba(5, 36, 191, 0.99))'
@@ -132,8 +129,6 @@ export const ReplyEmailPopup = ({threadId, token}) =>{
                     Reply
                 </Button>
                 </PopoverTrigger>
-
-                {/* Popover the reply button */}
                 <PopoverContent 
                 ml="15px"
                 w="50vw" h="60vh"
@@ -160,7 +155,6 @@ export const ReplyEmailPopup = ({threadId, token}) =>{
                             variant='unstyled'
                             >
                                 <InputLeftAddon
-                                // textAlign='right'
                                 bgColor={colorMode=='light' ? "gray.100" :'#141517'}
                                 color={colorMode=='light'? "gray.500" : "#BAB9BD"}
                                 >To:</InputLeftAddon>
@@ -180,7 +174,6 @@ export const ReplyEmailPopup = ({threadId, token}) =>{
                             variant='unstyled'
                             >
                                 <InputLeftAddon
-                                // textAlign='right'
                                 bgColor={colorMode=='light' ? "gray.100" :'#141517'}
                                 color={colorMode=='light'? "gray.500" : "#BAB9BD"}
                                 >From:</InputLeftAddon>
@@ -201,7 +194,6 @@ export const ReplyEmailPopup = ({threadId, token}) =>{
                             variant='unstyled'
                             >
                                 <InputLeftAddon
-                                // textAlign='right'
                                 bgColor={colorMode=='light' ? "gray.100" :'#141517'}
                                 color={colorMode=='light'? "gray.500" : "#BAB9BD"}
                                 >Subject:</InputLeftAddon>
@@ -217,7 +209,6 @@ export const ReplyEmailPopup = ({threadId, token}) =>{
                             <InputGroup
                             w="100%" 
                             p="0px 32px 8px 32px"
-                            // borderBottom='1px'
                             variant='unstyled'
                             >
                                 <Textarea

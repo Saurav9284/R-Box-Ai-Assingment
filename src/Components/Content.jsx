@@ -57,7 +57,6 @@ export const Content = ({data, contentName}) =>{
   const { colorMode, toggleColorMode } = useColorMode();
     return (
         <Box>
-             
             {(contentName == 'Mail')?<Flex>
                 <Inbox emails = {data} />
                 <Box

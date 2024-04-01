@@ -5,8 +5,6 @@ import { FaInbox } from "react-icons/fa";
 import logo1 from "../Images/Logo_1.png";
 import logoBlack from "../Images/Logo_black.png";
 
-
-
 const listItems = [
     {name: "Home", icon:MdHome},
     {name: "PersonSearch", icon:MdPersonSearch},

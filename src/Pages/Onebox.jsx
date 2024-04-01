@@ -7,7 +7,6 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 
 
-
 const resetList = async(token) =>{
     try{
       const res = await axios.get(`https://hiring.reachinbox.xyz/api/v1/onebox/reset`,{
@@ -16,15 +15,14 @@ const resetList = async(token) =>{
           "Content-Type": 'application/json'
         },
       })
-      // console.log(res);
       return res;
     }catch(err){
       console.log("Error fetching data:" , err);
     }
 }
 
+
 const fetchData = async (token) => {
-     
   try {
     const res = await axios.get('https://hiring.reachinbox.xyz/api/v1/onebox/list', {
       headers: {
@@ -32,7 +30,6 @@ const fetchData = async (token) => {
         "Content-Type": 'application/json'
       },
     });
-    // console.log(response.data);
     return res;
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -66,7 +63,6 @@ export const Onebox = ()=> {
   return (
     <Box>
       <Flex>
-        {/* sidebar  */}
         <Sidebar contentName={contentName} setContentName={setContentName} />
         <Box w="96%">
             <OneboxNavbar />

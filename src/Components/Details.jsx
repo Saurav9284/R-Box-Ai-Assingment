@@ -171,7 +171,7 @@ export const Details = () =>{
                                 fontWeight="400"
                                 fontSize="10px"
                                 color={colorMode=='light'?"gray.700":"#B9B9B9"}
-                                >Sent <span>3rd, Feb</span></Text>
+                                >Sent <span>5th, March</span></Text>
                             </Flex>
                         </Stack>
                     </Flex>
@@ -201,7 +201,7 @@ export const Details = () =>{
                                  fontWeight="400"
                                  fontSize="10px"
                                 color={colorMode=='light'? "gray.700": "#B9B9B9"}
-                                >Opened <span>5th, Feb</span></Text>
+                                >Opened <span>1st, March</span></Text>
                             </Flex>
                         </Stack>
                     </Flex>
@@ -231,7 +231,7 @@ export const Details = () =>{
                                  fontWeight="400"
                                  fontSize="10px"
                                  color={colorMode=='light'? "gray.700": "#B9B9B9"}
-                                >Opened <span>5th, Feb</span></Text>
+                                >Opened <span>1st, March</span></Text>
                             </Flex>
                         </Stack>
                     </Flex>

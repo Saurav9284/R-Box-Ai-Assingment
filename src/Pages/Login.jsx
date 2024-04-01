@@ -1,15 +1,11 @@
 import React from 'react';
 import { Box, Image, Stack, Text, Button, Link, Center, useColorMode } from "@chakra-ui/react";
-
 import logoImg from "../Images/logo.png";
 import { FcGoogle } from "react-icons/fc";
-
-
 
 export const Login = () => {
   const {colorMode, toggleColorMode} = useColorMode();
 
-  
   return (
     <Box  
     fontFamily={"Open Sans"}
@@ -70,7 +66,6 @@ export const Login = () => {
             }}
             ><FcGoogle /> 
             <Link 
-            // href='https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:3000/onebox'
             href='https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-ai.netlify.app/onebox'
             >
               Sign Up with Google

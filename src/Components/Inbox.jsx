@@ -27,7 +27,6 @@ export const Inbox = ({emails}) =>{
         textAlign="center"
         padding="12px"
         >
-            {/* top section */}
             <Flex
             w="100%"
             justifyContent="space-between"
@@ -59,7 +58,7 @@ export const Inbox = ({emails}) =>{
                         style={{color:(colorMode=="light")?"#343A40":"white", 
                         fontWeight:"700"}} 
                         
-                        >25/30</span> Inboxes selected
+                        >30/30</span> Inboxes selected
                     </Text>
                 </Stack>
 
@@ -76,8 +75,6 @@ export const Inbox = ({emails}) =>{
                     <MdRefresh />
                 </Box>
             </Flex>
-
-            {/* mid section */}
             <Stack>
                 <Box padding="4px 6px">
                     <InputGroup
@@ -111,7 +108,7 @@ export const Inbox = ({emails}) =>{
                         bgColor={colorMode=="light" ? "white":"#222426"}
                         borderRadius="17px" 
                         color="#5C7CFA"
-                        >26</Text>
+                        >27</Text>
                         <Text
                         fontSize="14px"
                         color={colorMode=="light" ? "#172B4D":"#E6E6E6"}
@@ -129,16 +126,10 @@ export const Inbox = ({emails}) =>{
                         <option value="newest">Newest</option>
                     </Select>
                 </Flex>
-
-                {/* Bottom section */}
                 <Box 
                 borderTop="1px"
-            
-                borderColor={(colorMode=='light')? "#D8D8D8":"#343A40"}
-               
-                >
+                borderColor={(colorMode=='light')? "#D8D8D8":"#343A40"}>
                     {
-                       
                         emails && emails.map((item, i) => (
                             <Box
                            
