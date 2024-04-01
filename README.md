@@ -32,7 +32,8 @@ ReachInbox streamlines your cold E-mail outreach with smart automation, personal
 
 ## Inbox :-
 
-![Screenshot 2024-04-01 122405](https://github.com/Saurav9284/R-Box-Ai-Assingment/assets/135011685/d6ecf2ba-c258-468e-981b-4153ced608b3)
+![Screenshot 2024-04-01 154533](https://github.com/Saurav9284/R-Box-Ai-Assingment/assets/135011685/b49c54c0-7703-4f34-a9fe-d9544a88f084)
+
 
 
 
