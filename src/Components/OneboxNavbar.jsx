@@ -19,7 +19,7 @@ export const OneboxNavbar = () =>{
                 color={(colorMode=='light') ? '#5B5F66' : '#FFFFFF'}
                 fontFamily="Open Sans"
                 fontWeight="700"
-                >Onebox</Text>
+                >✉️ Onebox</Text>
                 <Flex
                 alignItems="center"
                 gap="22px"
@@ -45,7 +45,7 @@ export const OneboxNavbar = () =>{
                     </FormControl>
                     
                     <Select>
-                        <option value="tims_workspace">Tim's Workspace</option>
+                        <option value="my-workspace">My Workspace</option>
                     </Select>
                 </Flex>
             </Flex>

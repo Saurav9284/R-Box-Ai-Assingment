@@ -86,7 +86,7 @@ export const AboutEmail = () =>{
                         fontWeight="600"
                         fontSize="14px"
                         color={colorMode=="light"?"#343A40":"white"}
-                        >{data[0].fromName}</Text>
+                        >🟢 {data[0].fromName}</Text>
                         <Text
                         fontFamily="Inter"
                         color={colorMode=='light' ? "rgba(52, 58, 64, 0.7)": "#666666"}
@@ -112,7 +112,7 @@ export const AboutEmail = () =>{
                     bgColor={colorMode=="light"?"white":"#1F1F1F"}
                     fontSize="12px"
                     >
-                        <option value="meeting_completed">Meeting Completed</option>
+                        <option value="meeting_completed">🟢  Meeting Completed</option>
                     </Select>
 
                     <Select 
@@ -124,7 +124,7 @@ export const AboutEmail = () =>{
                     bgColor={colorMode=="light"?"white":"#1F1F1F"}
                     fontSize="12px"
                     >
-                        <option value="move">Move</option>
+                        <option value="move">🟠  Move</option>
                     </Select>
 
                     <Button

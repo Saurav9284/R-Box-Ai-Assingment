@@ -47,7 +47,7 @@ export const Inbox = ({emails}) =>{
                     color="#4285F4" 
                     fontSize="20px"
                     >
-                        <option value="all_inbox">All Inbox(s)</option>
+                        <option value="all_inbox">✉️ All Inbox(s)</option>
                     </Select>
                     <Text 
                     color="#7F7F7F"
@@ -59,7 +59,7 @@ export const Inbox = ({emails}) =>{
                         style={{color:(colorMode=="light")?"#343A40":"white", 
                         fontWeight:"700"}} 
                         
-                        >25/25</span> Inboxes selected
+                        >25/30</span> Inboxes selected
                     </Text>
                 </Stack>
 
