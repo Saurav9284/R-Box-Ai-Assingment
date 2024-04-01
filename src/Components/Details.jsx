@@ -134,7 +134,7 @@ export const Details = () =>{
                     borderColor={(colorMode=='light')? "#D8D8D8":"#343A40"}
                     paddingRight="10px"
                     ><span fontWeight="400">3</span> Steps</Text>
-                    <Text><span fontWeight="400">5</span> Days in Sequence</Text>
+                    <Text><span fontWeight="400">8</span> Days in Sequence</Text>
                 </Flex>
 
                 <Stack 

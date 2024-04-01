@@ -29,8 +29,10 @@ const fetchData = async (token) => {
         Authorization: `Bearer ${token}`,
         "Content-Type": 'application/json'
       },
-    });
+    }
+    );
     return res;
+    
   } catch (error) {
     console.error('Error fetching data:', error);
   }
@@ -39,26 +41,26 @@ const fetchData = async (token) => {
 
 
 export const Onebox = ()=> {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const [contentName, setContentName] = useState('Home');
   const location = useLocation();
   const token = new URLSearchParams(location.search).get('token') || 
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoic2hhaGFuZXByaXlhbmthczAxQGdtYWlsLmNvbSIsImlkIjo5LCJmaXJzdE5hbWUiOiJQcml5YW5rYSIsImxhc3ROYW1lIjoiU2hhaGFuZSJ9LCJpYXQiOjE3MTE1MTA3NDEsImV4cCI6MTc0MzA0Njc0MX0";
-
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoic2F1cmF2MTc4Y2hhdmFuQGdtYWlsLmNvbSIsImlkIjo1MiwiZmlyc3ROYW1lIjoiU2F1cmF2IiwibGFzdE5hbWUiOiJDaGF2YW4ifSwiaWF0IjoxNzExOTYyODkwLCJleHAiOjE3NDM0OTg4OTB9.JCm7FChAlXVhc6Fu4DGMUJi91mZHIgC8iUCcDK24pSQ";
   localStorage.setItem('token', token);
 
   useEffect(()=>{
 
     if(token){
       fetchData(token).then(res=>{
-        setData(res.data.data);
-        console.log(res.data);
+        setData(res.data);
+        console.log(res);
       }).catch(err=>{
         console.log(err);
       });
     }
 
   },[token]);
+  // console.log(data)
 
   return (
     <Box>
