@@ -52,7 +52,7 @@ export const Onebox = ()=> {
 
     if(token){
       fetchData(token).then(res=>{
-        setData(res.data);
+        setData(res.data.data);
         console.log(res);
       }).catch(err=>{
         console.log(err);
