@@ -8,6 +8,16 @@ ReachInbox streamlines your cold E-mail outreach with smart automation, personal
 
 🟡 Frontend Deploy :- https://reachinbox-ai.netlify.app/
 
+ ## How to Run <br/>
+ 
+   ### Installation 
+   
+   - Clone the repository:  `https://github.com/Saurav9284/R-Box-Ai-Assingment` 
+   - Navigate to the project directory:   `cd reachinbox` 
+   - Install the dependencies:   `npm install` 
+   - Start the development server:   `npm run start`
+   - Open your browser and visit:   `http://localhost:3000`
+
 ## Login/Signup :- 
 
 ![Screenshot 2024-04-01 112349](https://github.com/Saurav9284/R-Box-Ai-Assingment/assets/135011685/3b9b864f-c4d3-40d9-a351-856b57e1686b)
