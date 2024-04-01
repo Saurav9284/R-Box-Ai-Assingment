@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Image, Stack, Text, Button, Link, Center, useColorMode } from "@chakra-ui/react";
+
 import logoImg from "../Images/logo.png";
 import { FcGoogle } from "react-icons/fc";
 
@@ -20,9 +21,11 @@ export const Login = () => {
         w={"100%"}
         h={"64px"}
         borderBottom={"1px"}
+        
         borderColor="#25262B"
         pos={"fixed"}
         top={0}
+        
         bgColor="black"
       >
           <Box>
@@ -34,6 +37,7 @@ export const Login = () => {
 
       <Center 
       minH="100vh"
+     
       bgColor={'black'} 
       >
         <Stack 
@@ -43,7 +47,7 @@ export const Login = () => {
         spacing={"48px"}
         border="1px"
         borderRadius={"17px"}
-        borderColor={"#343A40"}
+       
         bgGradient={'linear(to-t, #111214, #121212)'}
         >
           <Stack spacing={"24px"}>
@@ -67,7 +71,7 @@ export const Login = () => {
             ><FcGoogle /> 
             <Link 
             // href='https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:3000/onebox'
-           href='https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-ai.netlify.app/onebox'
+            href='https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-ai.netlify.app/onebox'
             >
               Sign Up with Google
             </Link>
@@ -99,8 +103,9 @@ export const Login = () => {
               fontWeight={"400"}
               >
                 Already have an account? <Link 
+              
                 color={"white"} 
-                href='/signin'>Sign In</Link>
+                href='https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-ai.netlify.app/onebox'>Sign In</Link>
               </Text>
           </Stack>
         </Stack>
