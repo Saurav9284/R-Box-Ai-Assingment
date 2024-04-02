@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Icon, IconButton, useColorMode } from "@chakra-ui/react";
 import { Sidebar } from '../Components/Sidebar';
 import { OneboxNavbar } from '../Components/OneboxNavbar';
 import { Content } from '../Components/Content';
 import { useLocation } from "react-router-dom";
+import { AiOutlineMessage } from "react-icons/ai";
 import axios from "axios";
+
 
 
 const resetList = async(token) =>{
@@ -48,6 +50,8 @@ export const Onebox = ()=> {
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoic2F1cmF2MTc4Y2hhdmFuQGdtYWlsLmNvbSIsImlkIjo1MiwiZmlyc3ROYW1lIjoiU2F1cmF2IiwibGFzdE5hbWUiOiJDaGF2YW4ifSwiaWF0IjoxNzExOTYyODkwLCJleHAiOjE3NDM0OTg4OTB9.JCm7FChAlXVhc6Fu4DGMUJi91mZHIgC8iUCcDK24pSQ";
   localStorage.setItem('token', token);
 
+  const { colorMode, toggleColorMode } = useColorMode();
+
   useEffect(()=>{
 
     if(token){
@@ -69,6 +73,17 @@ export const Onebox = ()=> {
         <Box w="96%">
             <OneboxNavbar />
             <Content contentName={contentName}  data={data} />
+            <IconButton
+            icon={<AiOutlineMessage />}
+            aria-label="Chat"
+            position="fixed"
+            bottom="4"
+            right="4"
+            bg={colorMode === "light" ? "blue.500" : "blue.500"} 
+            color={colorMode === "light" ? "black" : "white"} 
+            _hover={{ bg: colorMode === "light" ? "blue.700" : "blue.700" }} 
+            boxSize="60px"
+          />
         </Box>
       </Flex>
     </Box>

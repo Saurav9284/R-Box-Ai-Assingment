@@ -183,7 +183,7 @@ export const Inbox = ({ emails }) => {
                     bgColor={colorMode == 'light' ? "#F0F0F0" : "#222426"}
                     fontSize="10px"
                   >
-                    Interested
+                   🟢  Interested
                   </Button>
                   <Button
                     height="20px"
@@ -195,7 +195,7 @@ export const Inbox = ({ emails }) => {
                     color={colorMode == 'light' ? "#637381" : "#FFFFFF"}
                     bgColor={colorMode == 'light' ? "#F0F0F0" : "#222426"}
                   >
-                    Campaign Name
+                   🟡  Campaign Name
                   </Button>
                 </Flex>
               </Box>
